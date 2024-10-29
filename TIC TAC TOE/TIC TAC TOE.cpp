@@ -202,6 +202,7 @@ void addbook(book books[], int& bookcount) {
         for (int i = 0; i < issuecount; i++) {
             if (issues[i].bookid == bookid && issues[i].memberid == memberid) {
                 for (int j = 0; j < bookcount; j++) {
+
                     if (books[j].id == bookid) {
                         books[j].copies++;
                         break;
